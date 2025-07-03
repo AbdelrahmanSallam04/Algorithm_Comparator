@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SortingApp</class>
+ <widget class="QMainWindow" name="SortingApp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>407</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sorting Algorithm Analyzer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string>background-color: rgb(0, 0, 79);</string>
+   </property>
+   <layout class="QHBoxLayout" name="main_layout">
+    <item>
+     <layout class="QVBoxLayout" name="left_layout">
+      <item>
+       <layout class="QHBoxLayout" name="mode_layout">
+        <item>
+         <widget class="QRadioButton" name="compare_two_radio">
+          <property name="styleSheet">
+           <string>color: white; font-size: 16px; font-family: 'Century Gothic'; font-weight: bold;</string>
+          </property>
+          <property name="text">
+           <string>Compare Two Algorithms</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="compare_async_radio">
+          <property name="styleSheet">
+           <string>color: white; font-size: 16px; font-family: 'Century Gothic'; font-weight: bold;</string>
+          </property>
+          <property name="text">
+           <string>Compare with Asymptotic Efficiency</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="algo_compare_layout">
+        <item>
+         <widget class="QLabel" name="algo1_label">
+          <property name="text">
+           <string>Algorithm 1:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="algo1_combo">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string>QComboBox { background-color: white; border: 2px solid rgb(0, 0, 79); color: rgb(0, 0, 79); padding: 5px; font-size: 12px; }</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="algo2_label">
+          <property name="text">
+           <string>Algorithm 2:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="algo2_combo">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string>QComboBox { background-color: white; border: 2px solid rgb(0, 0, 79); color: rgb(0, 0, 79); padding: 5px; font-size: 12px; }</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="right_layout">
+      <item>
+       <layout class="QVBoxLayout" name="csv_layout">
+        <item>
+         <layout class="QHBoxLayout" name="csv_row">
+          <item>
+           <widget class="QCheckBox" name="csv_checkbox">
+            <property name="text">
+             <string>Use CSV Data</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="load_button">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string>QPushButton:disabled { background-color: #d3d3d3; color: #a9a9a9; border: 1px solid #a9a9a9; } QPushButton:enabled { background-color: rgb(0, 0, 79); color: white; font-size: 16px; }</string>
+            </property>
+            <property name="text">
+             <string>Load CSV</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="data_type_layout">
+        <item>
+         <widget class="QLabel" name="data_type_label">
+          <property name="text">
+           <string>Data Type:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="data_type_combo">
+          <property name="styleSheet">
+           <string>QComboBox { background-color: white; border: 2px solid rgb(0, 0, 79); color: rgb(0, 0, 79); padding: 5px; font-size: 12px; }</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="plot_button">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: white; color: rgb(0, 0, 79); font-size: 16px;</string>
+        </property>
+        <property name="text">
+         <string>Plot Graph</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
